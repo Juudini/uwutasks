@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Draggable, { DraggableProps } from "react-draggable";
 
 interface FloatModuleProps extends Partial<DraggableProps> {
@@ -10,9 +11,13 @@ function FloatModule({
   className = "",
   ...dragHandlers
 }: FloatModuleProps) {
+  const nodeRef = useRef(null);
   return (
-    <Draggable {...dragHandlers}>
-      <div className={`absolute bg-white shadow-lg rounded-lg ${className}`}>
+    <Draggable {...dragHandlers} nodeRef={nodeRef}>
+      <div
+        ref={nodeRef}
+        className={`absolute bg-white shadow-lg rounded-lg ${className}`}
+      >
         {children}
       </div>
     </Draggable>
