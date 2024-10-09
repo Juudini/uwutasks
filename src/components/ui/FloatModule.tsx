@@ -8,7 +8,7 @@ interface FloatModuleProps extends Partial<DraggableProps> {
 
 function FloatModule({
   children,
-  className = "",
+  className,
   ...dragHandlers
 }: FloatModuleProps) {
   const nodeRef = useRef(null);
@@ -16,7 +16,7 @@ function FloatModule({
     <Draggable {...dragHandlers} nodeRef={nodeRef}>
       <div
         ref={nodeRef}
-        className={`absolute bg-white shadow-lg rounded-lg ${className}`}
+        className={`absolute bg-background shadow-xl rounded-lg ${className}`}
       >
         {children}
       </div>
