@@ -2,7 +2,7 @@ import { StateCreator, create } from "zustand";
 import { persist } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
 
-type ModuleId = "pomo" | "note" | "theme" | "media" | "task";
+type ModuleId = "pomo" | "note" | "theme" | "media" | "task" | "fullScreen";
 
 interface BoardState {
   visibleModules: Record<string, boolean>;
@@ -18,6 +18,7 @@ const storeApi: StateCreator<BoardState, [["zustand/immer", never]]> = (
     theme: false,
     media: false,
     task: false,
+    fullScreen: false,
   },
   toggleVisibility: (moduleId: string) => {
     set((state) => ({

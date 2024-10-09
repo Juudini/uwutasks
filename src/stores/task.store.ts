@@ -16,10 +16,7 @@ const storeApi: StateCreator<TaskState, [["zustand/immer", never]]> = (
   get
 ) => ({
   tasks: {
-    "Task-1": { id: "ABC-1", title: "Task 1", status: "open" },
-    "Task-2": { id: "Task-2", title: "Task 2", status: "done" },
-    "Task-3": { id: "Task-3", title: "Task 3", status: "open" },
-    "Task-4": { id: "Task-4", title: "Task 4", status: "remove" },
+    Todo: { id: uuid(), title: "Todo", status: "open" },
   },
 
   getTaskByStatus: (status: TaskStatus) => {
