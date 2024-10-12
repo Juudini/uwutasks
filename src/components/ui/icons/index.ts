@@ -1,4 +1,5 @@
 export { default as AddIcon } from "./AddIcon";
+export { default as ArrowBackIcon } from "./ArrowBackIcon";
 export { default as CloseIcon } from "./CloseIcon";
 export { default as DeleteIcon } from "./DeleteIcon";
 export { default as FullScreenIcon } from "./FullScreenIcon";
@@ -6,5 +7,7 @@ export { default as MediaIcon } from "./MediaIcon";
 export { default as NoteIcon } from "./NoteIcon";
 export { default as PomoIcon } from "./PomoIcon";
 export { default as RemoveIcon } from "./RemoveIcon";
+export { default as RestartIcon } from "./RestartIcon";
+export { default as SettingIcon } from "./SettingIcon";
 export { default as TaskIcon } from "./TaskIcon";
 export { default as ThemeIcon } from "./ThemeIcon";

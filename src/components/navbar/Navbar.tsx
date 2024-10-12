@@ -13,16 +13,18 @@ type NavbarProps = {
 const Navbar = ({ items }: NavbarProps) => {
   return (
     <div className="fixed bottom-4 left-0 w-full z-50">
-      <div className="w-full max-w-lg mx-auto bg-background rounded-lg shadow-2xl py-2">
+      <div className="w-full max-w-lg mx-auto bg-primary rounded-lg shadow-2xl py-2">
         <ul className="flex justify-center gap-x-8">
           {items.map((item, index) => (
             <li key={index} className="flex flex-col items-center">
               <button
-                className="flex flex-col items-center space-y-1 text-primary focus:outline-none"
+                className="flex flex-col items-center space-y-1 focus:outline-none"
                 onClick={item.action}
               >
                 {item.icon}
-                <span className="text-sm font-medium">{item.label}</span>
+                <span className="text-sm font-medium text-primary">
+                  {item.label}
+                </span>
               </button>
             </li>
           ))}

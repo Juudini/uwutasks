@@ -9,12 +9,40 @@ main {
   background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
+h2 {
+  font-size: 2rem !important;
+}
+
 /* Light Mode */
 .light {
   --background: #f1f1f1b3;
-  --primary: #1f1f1f;
+  --bg-hover: #221c1c;
+  --bg-custom: #f491f5;
+  --bg-custom-hover: #7f4b80;
+
+  --text: #1f1f1f;
+  --text-hover: #e4e4e4;
+  --text-custom: #f491f5;
+  --text-custom-hover: #935a94;
+
+  --box-shadow: #1f1f1f;
+  --box-custom: #f491f5;
+
+  --drop-shadow: #1f1f1f;
+  --drop-custom: #f491f5;
+
+  --border: #1f1f1f;
+  --border-hover: #3f3f3f;
+  --border-custom: #f491f5;
+  --border-custom-hover: "";
+
+  --outline: "#1f1f1f";
+  --outline-hover: "#3f3f3f";
+  --outline-custom: "#62dff4";
+  --outline-custom-hover: "#04acb1";
 
   /* Icons */
+  --icon-primary: #1f1f1f;
   --icon-pomo: #62dff4;
   --icon-task: #f491f5;
   --icon-note: #8971ee;
@@ -26,9 +54,33 @@ main {
 /* Dark Mode */
 .dark {
   --background: #1f1f1fb3;
-  --primary: #f1f1f1;
+  --bg-hover: #f1f1f1;
+  --bg-custom: #04acb1;
+  --bg-custom-hover: #034547;
+
+  --text: #f1f1f1;
+  --text-hover: #949494;
+  --text-custom: #04acb1;
+  --text-custom-hover: #034547;
+
+  --box-shadow: #f1f1f1;
+  --box-custom: #04acb1;
+
+  --drop-shadow: #f1f1f1;
+  --drop-custom: #04acb1;
+
+  --border: #f1f1f1;
+  --border-hover: "#b4b4b4";
+  --border-custom: #f491f5;
+  --border-custom-hover: "";
+
+  --outline: #f1f1f1;
+  --outline-hover: #b4b4b4;
+  --outline-custom: #6c0e90;
+  --outline-custom-hover: #f491f5;
 
   /* Icons */
+  --icon-primary: #f1f1f1;
   --icon-pomo: #04acb1;
   --icon-task: #de4d7e;
   --icon-note: #752463;

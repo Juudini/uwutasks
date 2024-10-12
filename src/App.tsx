@@ -2,6 +2,7 @@ import { Layout, Board } from "@/layouts";
 import { useBoardStore } from "@/stores";
 import {
   Note,
+  Pomo,
   Task,
   FullScreenIcon,
   MediaIcon,
@@ -11,10 +12,11 @@ import {
   ThemeIcon,
 } from "@/components";
 import { NavbarItem } from "@/components/navbar/Navbar";
+import { useToggleVisibility } from "./hooks/board/toggle-visibility.hook";
 
 function App() {
-  const toggleVisibility = useBoardStore((state) => state.toggleVisibility);
-  const visibleModule = useBoardStore((state) => state.visibleModules);
+  const toggleVisibility = useToggleVisibility();
+  const visibleModule = useBoardStore(state => state.visibleModules);
 
   const navbarItems: NavbarItem[] = [
     {
@@ -52,6 +54,7 @@ function App() {
   return (
     <Layout navbarItems={navbarItems}>
       <Board>
+        {visibleModule.pomo && <Pomo />}
         {visibleModule.task && <Task />}
         {visibleModule.note && <Note />}
       </Board>

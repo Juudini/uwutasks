@@ -1,9 +1,9 @@
-import { IconProps } from "@/interfaces";
+import { IconProps } from "@/types";
 
 const CloseIcon = ({
   width = "24px",
   height = "24px",
-  fill = "",
+  fill = "var(--icon-primary)",
   className,
 }: IconProps) => {
   return (

@@ -1,4 +1,4 @@
-import { IconProps } from "@/interfaces";
+import { IconProps } from "@/types";
 
 const ThemeIcon = ({
   width = "24px",

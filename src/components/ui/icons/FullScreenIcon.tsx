@@ -1,4 +1,4 @@
-import { IconProps } from "@/interfaces";
+import { IconProps } from "@/types";
 
 type FSIconProps = IconProps & {
   isFullScreen?: "true" | "false";
