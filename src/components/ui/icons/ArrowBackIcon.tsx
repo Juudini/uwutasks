@@ -1,6 +1,6 @@
 import { IconProps } from "@/types";
 
-const AddIcon = ({
+const ArrowBackIcon = ({
   width = "24px",
   height = "24px",
   fill = "var(--icon-primary)",
@@ -15,9 +15,9 @@ const AddIcon = ({
       fill={fill}
       className={className}
     >
-      <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+      <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
     </svg>
   );
 };
 
-export default AddIcon;
+export default ArrowBackIcon;

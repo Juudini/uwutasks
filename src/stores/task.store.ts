@@ -1,8 +1,8 @@
 import { StateCreator, create } from "zustand";
 import { persist } from "zustand/middleware";
-import { Task, TaskStatus } from "@/interfaces";
 import { v4 as uuid } from "uuid";
 import { immer } from "zustand/middleware/immer";
+import { Task, TaskStatus } from "@/types";
 
 interface TaskState {
   tasks: Record<string, Task>;
@@ -21,19 +21,19 @@ const storeApi: StateCreator<TaskState, [["zustand/immer", never]]> = (
 
   getTaskByStatus: (status: TaskStatus) => {
     const tasks = get().tasks;
-    return Object.values(tasks).filter((task) => task.status === status);
+    return Object.values(tasks).filter(task => task.status === status);
   },
 
   addTask: (title: string, status: TaskStatus) => {
     const newTask = { id: uuid(), title, status };
 
-    set((state) => {
+    set(state => {
       state.tasks[newTask.id] = newTask;
     });
   },
 
   changeTaskStatus: (taskId: string, status: TaskStatus) => {
-    set((state) => {
+    set(state => {
       state.tasks[taskId].status = status;
     });
   },

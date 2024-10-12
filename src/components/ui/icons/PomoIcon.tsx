@@ -1,4 +1,4 @@
-import { IconProps } from "@/interfaces";
+import { IconProps } from "@/types";
 
 const PomoIcon = ({
   width = "24px",
