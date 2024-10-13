@@ -47,7 +47,14 @@ function App() {
     {
       icon: <FullScreenIcon />,
       label: "FS",
-      action: () => toggleVisibility("fullScreen"),
+      action: () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+          return;
+        }
+
+        document.exitFullscreen();
+      },
     },
   ];
 
