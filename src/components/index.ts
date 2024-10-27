@@ -1,3 +1,4 @@
+export { default as Media } from "./media/Media";
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Note } from "./note/Note";
 export { default as Pomo } from "./pomo/Pomo";
