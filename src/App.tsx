@@ -10,6 +10,7 @@ import {
   PomoIcon,
   TaskIcon,
   ThemeIcon,
+  Media,
 } from "@/components";
 import { NavbarItem } from "@/components/navbar/Navbar";
 import { useToggleVisibility } from "./hooks/board/toggle-visibility.hook";
@@ -64,6 +65,7 @@ function App() {
         {visibleModule.pomo && <Pomo />}
         {visibleModule.task && <Task />}
         {visibleModule.note && <Note />}
+        {visibleModule.media && <Media />}
       </Board>
     </Layout>
   );
