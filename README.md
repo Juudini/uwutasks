@@ -4,4 +4,4 @@
 
 Stay tuned! **UwuTasks** is coming soon. We’re working to bring you a minimal and efficient task management application.
 
-Thank you for your patience.
+Thank you for your patience...
